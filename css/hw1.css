@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: -40px;
+}
+
+.skip-link:focus {
+    top: 0;
+    left: 0;
+    background-color: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+}
+
+main {
+    display: flex;
+}
+
+.left {
+    flex: 1;
+    padding: 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.left img {
+    margin: 15px 0;
+    width: 100%;
+    max-width: 300px;
+}
+
+.right {
+    flex: 2;
+    padding: 20px;
+}
+
+.right h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.right p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.right table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.right table, th, td {
+    border: 1px solid #ccc;
+}
+
+.right th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+.right th {
+    background-color: #333;
+    color: #fff;
+}
