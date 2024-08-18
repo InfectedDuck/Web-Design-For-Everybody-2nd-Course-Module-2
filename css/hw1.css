@@ -17,6 +17,12 @@ header h1 {
 
 nav {
     margin-top: 10px;
+    display: inline-block;
+    width: 80%;
+}
+
+nav img {
+    width: 10%;
 }
 
 nav a {
@@ -82,22 +88,25 @@ main {
     line-height: 1.6;
 }
 
-.right table {
+.li {
+    list-style-type: none;
+    padding: 5px;
+} 
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 40%);
+    justify-content: center;
+    align-items: start;
+    row-gap: 20px;
+}
+
+.grid img {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
 }
 
-.right table, th, td {
-    border: 1px solid #ccc;
-}
-
-.right th, td {
-    padding: 10px;
-    text-align: left;
-}
-
-.right th {
-    background-color: #333;
-    color: #fff;
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
